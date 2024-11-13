@@ -5,15 +5,17 @@ function Header() {
   const { t, i18n } = useTranslation();
  const changeLang = (lang) =>{
       i18n.changeLanguage(lang)
+    
  }
-
+ 
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light "
-      style={{ backgroundColor: "#007A33 " }}
+      className="navbar navbar-expand-lg navbar-light " 
+      style={{ backgroundColor: "#007A33 ", 
+       }}
     >
       <div className="container ">
-        <a className="navbar-brand text-warning fw-bolder" href="#">
+        <a className="navbar-brand text-warning fw-bolder display-2" href="#"   style={{ fontSize: '1.9rem' }} >
           {t("Name")}
         </a>
         <button
@@ -27,33 +29,33 @@ function Header() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="container ms-lg-5 ps-5">
+        <div className="collapse navbar-collapse m-3 ps-lg-5" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link text-warning" href="#">
+              <a className="nav-link  p-3 active text-warning" href="#"  style={{ fontSize: '1.1rem' }}>
                 {t("AboutFatime")}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link  text-warning" href="#">
+              <a className="nav-link  p-3  text-warning" href="#"  style={{ fontSize: '1.1rem' }}>
                 {t("LifeLessons")}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link  text-warning" href="#">
+              <a className="nav-link p-3   text-warning" href="#"  style={{ fontSize: '1.1rem' }}>
                 {t("Rescources")}
               </a>
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle text-warning "
+                className="nav-link  p-3 dropdown-toggle text-warning "
                 href="#"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                style={{ fontSize: '1.1rem' }}
               >
                 {t("Language")}
               </a>
@@ -71,7 +73,7 @@ function Header() {
               </div>
             </li>
           </ul>
-          </div>
+  
         </div>
       </div>
     </nav>
