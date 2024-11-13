@@ -1,11 +1,17 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { useEffect } from 'react';
+
+import Header from './Components/Header.jsx'
 function App() {
-    const {t} = useTranslation();
+  const { i18n } = useTranslation();
+  useEffect(() => {
+    document.body.dir = i18n.language === 'fa' ? 'rtl' : 'ltr';
+  }, [i18n.language]);
   return (
-    <div>
-       {t('WelcomeMessage')}
-    </div>
+    <>
+      <Header></Header>
+    </>
   )
 }
 

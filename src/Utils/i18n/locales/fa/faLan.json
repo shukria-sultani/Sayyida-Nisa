@@ -1,5 +1,9 @@
 {
-    "AboutFatime": "در باره حضرت فلطمه فاطمه",
+     "Name": "سید النسا",
+    "AboutFatime": "در باره حضرت  فاطمه",
     "LifeLessons" : "آموزه ها",
-     "Rescources" :"منابع و آگاهی"
+     "Rescources" :"منابع و آگاهی" ,
+     "Language": "زبان",
+      "Language1": "انگلیسی",
+      "Language2": "فارسی"
 }
