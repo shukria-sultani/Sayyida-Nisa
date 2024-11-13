@@ -43,7 +43,7 @@ function Header() {
             </li>
             <li className="nav-item">
               <a className="nav-link p-3   text-warning" href="#"  style={{ fontSize: '1.1rem' }}>
-                {t("Rescources")}
+                {t("Resources")}
               </a>
             </li>
             <li className="nav-item dropdown">

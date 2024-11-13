@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useEffect } from 'react';
 
 import Header from './Components/Header.jsx'
+import SartingQuote from './Components/SartingQuote.jsx';
 function App() {
   const { i18n } = useTranslation();
   useEffect(() => {
@@ -10,7 +11,8 @@ function App() {
   }, [i18n.language]);
   return (
     <>
-      <Header></Header>
+      <Header />
+      <SartingQuote />
     </>
   )
 }

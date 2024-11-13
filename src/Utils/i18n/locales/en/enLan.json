@@ -1,9 +1,13 @@
 {
     "Name": "Sayeeda Nisa",
     "AboutFatime": "About Hazarat Fatima",
-    "LifeLessons" : "Life Lessons",
-     "Rescources" :"Resources and Awareness",
-     "Language": "Language",
-     "Language1": "English",
-      "Language2": "Persian"
+    "LifeLessons": "Life Lessons",
+    "Resources": "Resources and Awareness",
+    "Language": "Language",
+    "Language1": "English",
+    "Language2": "Persian",
+    "startingquote": "One can live beautifully; one can be so good that goodness takes on a different meaning in front of you. One can be warm and full of hope… If Fatima Zahra (peace be upon her and her family) is your hope, you can be a star, shining light on your life and the lives of others. Life can remain a joyful melody when Fatima Zahra (peace be upon her) is your supporter.\nOne can have no sorrow while the daughter of the Prophet (peace be upon him and his family) guarantees your honor in the presence of the Lord. Peace be upon the oppression of Zahra and her pure and immaculate family…",
+    "prophetQuote": "Fatima, I named her, because Allah protects her and anyone who loves her from the fire.\n — Prophet Muhammad"
+
+
 }
