@@ -38,3 +38,18 @@
 .nav-link:hover::after {
     transform: scaleX(1); /* Expand underline on hover */
 }
+.starting-quote-con {
+      background-image: url(../public/images/startquote.jpeg);
+      background-size: contain;
+      height: 90vh;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      
+}
+.starting-quote-con .container{
+      background-color: rgba(245, 173, 28, 0.5);
+      color: #007A33;
+      box-shadow: 0ox 10px 10px 0px #007A33;
+    
+}
