@@ -1,5 +1,5 @@
 *{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Calibri;
 }
 .nav-item  .active::after {
     content: '';
@@ -38,17 +38,17 @@
 .nav-link:hover::after {
     transform: scaleX(1); /* Expand underline on hover */
 }
-.starting-quote-con {
-      background-image: url(../public/images/startquote.jpeg);
+ .starting-quote-con {
+      background-image: url(../public/images/milad-fateme-8a.jpg);
       background-size: contain;
-      height: 90vh;
       background-repeat: no-repeat;
       background-position: center;
-
-      
+      height: auto;
+     
 }
+
 .starting-quote-con .container{
-      background-color: rgba(245, 173, 28, 0.5);
+      background-color: rgba(245, 173, 28, 0.7);
       color: #007A33;
       box-shadow: 0ox 10px 10px 0px #007A33;
     

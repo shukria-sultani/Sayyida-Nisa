@@ -9,7 +9,7 @@ function SartingQuote() {
       >
       <p>{t('startingquote')}</p>  
       </div>
-           <div className="container p-3 mt-4 fw-bolder text-center rounded-3"   style={{fontSize:"1.4rem"}}>
+           <div className="container p-4 mt-4 fw-bolder text-center  rounded-3"   style={{fontSize:"1.4rem"}}>
           <p>{t('prophetQuote')}</p>                                                 
            </div>
      </div>
