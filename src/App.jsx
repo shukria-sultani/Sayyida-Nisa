@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 import Header from './Components/Header.jsx'
 import SartingQuote from './Components/SartingQuote.jsx';
+import Biography from './Components/Biography.jsx'
 function App() {
   const { i18n } = useTranslation();
   useEffect(() => {
@@ -13,6 +14,7 @@ function App() {
     <>
       <Header />
       <SartingQuote />
+      <Biography/>
     </>
   )
 }
