@@ -21,7 +21,7 @@
 
  .nav-link::after {
     content: '';
-    position: absolute;
+    position: absolute;   
     left: 0;
     bottom: -0.5px;
      width: 100%; 
@@ -48,8 +48,31 @@
 }
 
 .starting-quote-con .container{
-      background-color: rgba(245, 173, 28, 0.7);
+      background-color: rgba(245, 173, 28, 0.6);
       color: #007A33;
       box-shadow: 0ox 10px 10px 0px #007A33;
     
+}
+.bio-section{
+    box-shadow: 2px 2px 4px 4px rgba(245, 173, 28, 0.6);
+    /* background: 
+    linear-gradient(to left, rgba(245, 173, 28), rgba(9, 154, 31)); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+@media screen  and(max-width:650px){ 
+    .bio-section p{
+        font-size: 15px;
+     }
+}
+.bio-section p{
+    font-size: 22px;
+}
+.bio-section h2{
+    text-shadow: 
+    -1px -1px 0 rgb(245, 173, 28),  
+     1px -1px 0 rgb(245, 173, 28),
+    -1px  1px 0 rgb(245, 173, 28),
+     1px  1px 0 rgb(245, 173, 28);
 }
