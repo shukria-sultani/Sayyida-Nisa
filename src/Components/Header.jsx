@@ -10,7 +10,7 @@ function Header() {
  
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light " 
+      className="navbar navbar-expand-lg posotion-fixed navbar-light " 
       style={{ backgroundColor: "#007A33 ", 
        }}
     >
@@ -30,19 +30,19 @@ function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse m-3 ps-lg-5" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item active">
-              <a className="nav-link  p-3 active text-warning" href="#"  style={{ fontSize: '1.1rem' }}>
+          <ul className="navbar-nav" >
+            <li className="nav-item active" >
+              <a className="nav-link  p-3 active text-warning" href="#"  style={{ fontSize: '1.3rem' }}>
                 {t("AboutFatime")}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link  p-3  text-warning" href="#"  style={{ fontSize: '1.1rem' }}>
+              <a className="nav-link  p-3  text-warning" href="#"  style={{ fontSize: '1.3rem' }}>
                 {t("LifeLessons")}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link p-3   text-warning" href="#"  style={{ fontSize: '1.1rem' }}>
+              <a className="nav-link p-3   text-warning" href="#"  style={{ fontSize: '1.3rem' }}>
                 {t("Resources")}
               </a>
             </li>
