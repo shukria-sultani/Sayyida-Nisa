@@ -55,10 +55,10 @@
 }
 .bio-section{
     box-shadow: 2px 2px 4px 4px rgba(245, 173, 28, 0.6);
-    /* background: 
-    linear-gradient(to left, rgba(245, 173, 28), rgba(9, 154, 31)); */
-    background-repeat: no-repeat;
+    background: 
+    linear-gradient(to left, rgba(245, 173, 28, 0.9), rgba(227, 200, 118, 0.7)), url(../public/images/20.jpg) ;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
 }
 @media screen  and(max-width:650px){ 

@@ -1,6 +1,6 @@
 import React from "react";
 import BiographySections from "./BiographySections";
-import { useTranslation } from "react-i18next";
+import {Trans, useTranslation } from "react-i18next";
 
 function Biography() {
   const { t } = useTranslation(); 
@@ -17,16 +17,44 @@ function Biography() {
         </div>
         <div className="col-12">
           <BiographySections
-            heading={t("earlyLife")}
-            bodyText={t("earlyLifeContent")}
-            sources={t("earlyLifeSources")}
+            heading={t("marriage")}
+            bodyText={t("marriageContent")}
+            sources={t("marriageSources")}
           />   
         </div>
         <div className="col-12">
           <BiographySections
-            heading={t("earlyLife")}
-            bodyText={t("earlyLifeContent")}
-            sources={t("earlyLifeSources")}
+            heading={t("titlesOfFatime")}
+            bodyText={t("titlesContent")}
+            sources={t("titlesSources")}
+          />
+        </div>
+        <div className="col-12">
+          <BiographySections
+            heading={t("virtues")}
+            bodyText={t("virtuesContent")}
+            sources={t("virtuesSources")}
+          />
+        </div>
+        <div className="col-12">
+          <BiographySections
+            heading={t("socialActivities")}
+            bodyText={t("socialActivitiesContent")}
+            sources={t("socialActivitiesSources")}
+          />
+        </div>
+        <div className="col-12">
+          <BiographySections
+            heading={t("importance")}
+            bodyText={t("importanceContent")}
+            sources={t("importanceSources")}
+          />
+        </div>
+        <div className="col-12">
+          <BiographySections
+            heading={t("martyrdom")}
+            bodyText={t("martyrdomContent")}
+            sources={t("martyrdomSources")}
           />
         </div>
       </div>
