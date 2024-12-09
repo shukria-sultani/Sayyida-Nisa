@@ -24,6 +24,9 @@ function Footer() {
             <a href="" className="text-warning"> {t('Resources')}</a>
           </li>
         </ul>
+         <div className="container fw-bolder text-center" style={{fontSize: "2em"}}>
+            {t("zuhoorDua")}
+         </div>
       </div>
     </div>
   );

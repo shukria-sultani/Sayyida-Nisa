@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Header() {
   const { t, i18n } = useTranslation();
  const changeLang = (lang) =>{
@@ -32,19 +33,19 @@ function Header() {
         <div className="collapse navbar-collapse m-3 ps-lg-5" id="navbarNav">
           <ul className="navbar-nav" >
             <li className="nav-item active" >
-              <a className="nav-link  p-3 active text-warning" href="#"  style={{ fontSize: '1.3rem' }}>
+              <Link className="nav-link  p-3 active text-warning" to={'/'}  style={{ fontSize: '1.3rem' }}>
                 {t("AboutFatime")}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link  p-3  text-warning" href="#"  style={{ fontSize: '1.3rem' }}>
+              <Link className="nav-link  p-3  text-warning" to={'/lifelessons'}  style={{ fontSize: '1.3rem' }}>
                 {t("LifeLessons")}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link p-3   text-warning" href="#"  style={{ fontSize: '1.3rem' }}>
+              <Link className="nav-link p-3   text-warning" to={'/resources'}  style={{ fontSize: '1.3rem' }}>
                 {t("Resources")}
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <a
