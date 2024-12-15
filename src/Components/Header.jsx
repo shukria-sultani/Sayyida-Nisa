@@ -1,22 +1,19 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function Header() {
+  const activeLink = ({ isActive }) =>
+    isActive ? "nav-link active p-3  text-warning" : "nav-link p-3 text-warning";
+
   const { t, i18n } = useTranslation();
- const changeLang = (lang) =>{
-      i18n.changeLanguage(lang)
-    
- }
- 
+  const changeLang = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
   return (
-    <nav
-      className="navbar navbar-expand-lg posotion-fixed navbar-light " 
-      style={{ backgroundColor: "#007A33 ", 
-       }}
-    >
-      <div className="container ">
-        <a className="navbar-brand text-warning fw-bolder display-2" href="#"   style={{ fontSize: '1.9rem' }} >
+    <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#007A33" }}>
+      <div className="container">
+        <a className="navbar-brand text-warning fw-bolder display-2" href="#" style={{ fontSize: '1.9rem' }}>
           {t("Name")}
         </a>
         <button
@@ -31,25 +28,25 @@ function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse m-3 ps-lg-5" id="navbarNav">
-          <ul className="navbar-nav" >
-            <li className="nav-item active" >
-              <Link className="nav-link  p-3 active text-warning" to={'/'}  style={{ fontSize: '1.3rem' }}>
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <NavLink className={activeLink} to="/" style={{ fontSize: '1.3rem' }}>
                 {t("AboutFatime")}
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link  p-3  text-warning" to={'/lifelessons'}  style={{ fontSize: '1.3rem' }}>
+              <NavLink className={activeLink} to="/lifelessons" style={{ fontSize: '1.3rem' }}>
                 {t("LifeLessons")}
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link p-3   text-warning" to={'/resources'}  style={{ fontSize: '1.3rem' }}>
+              <NavLink className={activeLink} to="/resources" style={{ fontSize: '1.3rem' }}>
                 {t("Resources")}
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item dropdown">
               <a
-                className="nav-link  p-3 dropdown-toggle text-warning "
+                className="nav-link p-3 dropdown-toggle text-warning"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -60,21 +57,16 @@ function Header() {
               >
                 {t("Language")}
               </a>
-              <div
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdown"
-                style={{ backgroundColor: "#007A33" }}
-              >
-                <a className="dropdown-item   text-warning" href="#" onClick={() => changeLang('en')}>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown" style={{ backgroundColor: "#007A33" }}>
+                <a className="dropdown-item text-warning" href="#" onClick={() => changeLang('en')}>
                   {t("Language1")}
                 </a>
-                <a className="dropdown-item   text-warning" href="#" onClick={() => changeLang('fa')}>
+                <a className="dropdown-item text-warning" href="#" onClick={() => changeLang('fa')}>
                   {t("Language2")}
                 </a>
               </div>
             </li>
           </ul>
-  
         </div>
       </div>
     </nav>
