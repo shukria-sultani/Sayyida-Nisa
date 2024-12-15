@@ -1,36 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
-
-// import Header from "./Components/Header.jsx";
-// import SartingQuote from "./Components/SartingQuote.jsx";
-// import Biography from "./Components/Biography.jsx";
-// import Footer from "./Components/Footer.jsx";
-
-import HomePage from "./Pages/HomePage"
-import LifeLessons from "./Pages/LifeLessons"
+import HomePage from "./Pages/HomePage";
+import LifeLessons from "./Pages/LifeLessons";
 import Resources from "./Pages/Resources";
-import {Route,
-  createBrowserRouter, 
-  createRoutesFromElements,
-  RouterProvider} from "react-router-dom"
-const router = createBrowserRouter(
-  createRoutesFromElements(
-   <Route>
-    <Route index element= {<HomePage />}/>
-    <Route path ="/lifelessons" element= {<LifeLessons />}/>
-    <Route path="/resources" element= {<Resources />} ></Route>
-    </Route>
-  )
-)
+import {
+  Route,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+// Define the router without <Routes>
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage />,
+    index: true, // This makes it the default route
+  },
+  {
+    path: "/lifelessons",
+    element: <LifeLessons />,
+  },
+  {
+    path: "/resources",
+    element: <Resources />,
+  },
+]);
+
 function App() {
   const { i18n } = useTranslation();
+  
   useEffect(() => {
     document.body.dir = i18n.language === "fa" ? "rtl" : "ltr";
   }, [i18n.language]);
+
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
+      <RouterProvider router={router} />
     </>
   );
 }
