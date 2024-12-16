@@ -1,7 +1,9 @@
 *{
     font-family: "Montserrat", Calibri;
+    padding: 0;
+    margin: 0;
 }
-.nav-item  .active::after {
+.navbar-collapse .nav-item .active::after {
     content: '';
     position: absolute;
     left: 0;
@@ -12,14 +14,14 @@
     transform: scaleX(1); 
     transition: transform 0.3s ease; 
 }
-.nav-link {
+.nav-item  .nav-link {
     text-decoration: none; 
     padding: 5px 10px;
     transition: color 0.3s ease, transform 0.3s ease;
     position: relative; 
 }
 
- .nav-link::after {
+.nav-item  .nav-link::after {
     content: '';
     position: absolute;   
     left: 0;
@@ -31,26 +33,33 @@
     transition: transform 0.3s ease; 
 } 
 
-.nav-link:hover {
+.nav-item  .nav-link:hover {
     transform: translateY(-2px); /* Slight lift on hover */
 }
 
-.nav-link:hover::after {
+.nav-item  .nav-link:hover::after {
     transform: scaleX(1); /* Expand underline on hover */
 }
  .starting-quote-con {
-      background-image: url(../public/images/milad-fateme-8a.jpg);
+      background-image: url(../public/images/5e5498836db0fa6b458dd3fefb310f41.gif);
+      background-repeat: repeat;
       background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: auto;
+      height:auto;
+   
      
 }
 
 .starting-quote-con .container{
-      background-color: rgba(245, 173, 28, 0.6);
-      color: #007A33;
+      background-color: rgba(252, 175, 20, 0.6);
+      /* color: rgb(242, 178, 49); */
+      color: #299e0b;
       box-shadow: 0ox 10px 10px 0px #007A33;
+         /* text-shadow: 
+    -1px -1px 0 rgb(6, 204, 56),  
+     1px -1px 0 rgb(6, 204, 56),
+    -1px  1px 0 rgb(6, 204, 56),
+     1px  1px 0 rgb(6, 204, 56); */
+
     
 }
 .bio-section{
@@ -75,4 +84,20 @@
      1px -1px 0 rgb(245, 173, 28),
     -1px  1px 0 rgb(245, 173, 28),
      1px  1px 0 rgb(245, 173, 28);
+}
+.life-lessson-hero{
+    background-image: url(../public/images/36b5cac97e70863dda9a5dd8329cc8e4.jpg);
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+   
+    
+  
+}
+.life-lessson-hero p{
+    text-shadow: 
+    -1px -1px 0 rgb(6, 204, 56),  
+     1px -1px 0 rgb(6, 204, 56),
+    -1px  1px 0 rgb(6, 204, 56),
+     1px  1px 0 rgb(6, 204, 56);
 }
