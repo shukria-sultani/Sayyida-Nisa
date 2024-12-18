@@ -4,7 +4,6 @@ import HomePage from "./Pages/HomePage";
 import LifeLessons from "./Pages/LifeLessons";
 import Resources from "./Pages/Resources";
 import {
-  Route,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";

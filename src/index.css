@@ -101,3 +101,34 @@
     -1px  1px 0 rgb(6, 204, 56),
      1px  1px 0 rgb(6, 204, 56);
 }
+.life-lesson{
+     background-image: url(../public/images/ffef6a35-6cf5-47a1-995c-b06a35b62462.jpeg);
+  background-size: contain;
+
+
+   
+}
+.life-lesson h3{
+    text-shadow: 
+    -1px -1px 0 rgb(6, 204, 56),  
+     1px -1px 0 rgb(6, 204, 56),
+    -1px  1px 0 rgb(6, 204, 56),
+     1px  1px 0 rgb(6, 204, 56);
+}
+
+.life-lesson p{
+     font-size: 1.2em;
+     line-height: 2;
+}
+
+.life-lesson-section h3{
+    text-shadow: 
+    -1px -1px 0 rgb(6, 204, 56),  
+     1px -1px 0 rgb(6, 204, 56),
+    -1px  1px 0 rgb(6, 204, 56),
+     1px  1px 0 rgb(6, 204, 56);
+}
+.life-lesson-section p{
+    font-size: 1.2em;
+    line-height: 2;
+}
