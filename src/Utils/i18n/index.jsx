@@ -1,16 +1,30 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import enLan from "../i18n/locales/en/enLan.json"
-import faLan from "../i18n/locales/fa/faLan.json"
-// the translations
-// (tip move them in a JSON file and import them,
-// or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
+
+// English translation files 
+import enAboutFatima from "../i18n/locales/en/enAboutFatima.json"
+import enLifeLessons from "../i18n/locales/en/enLifeLessons.json"
+import enQuotes from "../i18n/locales/en/enQuotes.json"
+
+// Persian translation files 
+import faAboutFatima from "../i18n/locales/fa/faAboutFatima.json"
+import faLifeLessons from "../i18n/locales/fa/faLifeLessons.json"
+import faQuotes from "../i18n/locales/fa/faQuotes.json"
+
 const resources = {
   en: {
-    translation: enLan 
+    translation: {
+      ...enAboutFatima,
+      ...enLifeLessons,
+      ...enQuotes
+    }
   },
   fa: {
-    translation: faLan 
+    translation:{
+      ...faAboutFatima,
+      ...faLifeLessons,
+      ...faQuotes
+    }
   }
 };
 
