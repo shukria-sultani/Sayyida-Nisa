@@ -132,3 +132,26 @@
     font-size: 1.2em;
     line-height: 2;
 }
+
+.main-quote-con{
+    background-image: url(../public/images/Lindas\ margaridas\ em\ fundo\ amarelo\ com\ copyspace\ na\ parte\ inferior\ _\ Foto\ Grátis.jpeg);
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+.butterflies{
+    /* transform: translateY(-10%); */
+    background-image: url(../public/images/491e8249887be2a4550b47b2a6c7de10.gif);
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-repeat: repeat-x;
+    
+}
+.quote{
+    font-size: 22px;
+}
+.quote-title{
+    font-size: 25px;
+    font-weight: 900;
+}
