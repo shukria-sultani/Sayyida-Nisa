@@ -5,25 +5,28 @@ import { initReactI18next } from "react-i18next";
 import enAboutFatima from "../i18n/locales/en/enAboutFatima.json"
 import enLifeLessons from "../i18n/locales/en/enLifeLessons.json"
 import enQuotes from "../i18n/locales/en/enQuotes.json"
+import enResources from "../i18n/locales/en/enResources.json"
 
 // Persian translation files 
 import faAboutFatima from "../i18n/locales/fa/faAboutFatima.json"
 import faLifeLessons from "../i18n/locales/fa/faLifeLessons.json"
 import faQuotes from "../i18n/locales/fa/faQuotes.json"
-
+import faResources from "../i18n/locales/fa/faResources.json"
 const resources = {
   en: {
     translation: {
       ...enAboutFatima,
       ...enLifeLessons,
-      ...enQuotes
+      ...enQuotes,
+      ...enResources
     }
   },
   fa: {
     translation:{
       ...faAboutFatima,
       ...faLifeLessons,
-      ...faQuotes
+      ...faQuotes,
+      ...faResources
     }
   }
 };
