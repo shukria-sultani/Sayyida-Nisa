@@ -7,8 +7,9 @@ const divStyle = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundSize: 'cover',
+  backgroundSize: 'auto',
   backgroundPosition: "center",
+  backgroundRepeat :"no-repeat",
   height: "90vh"
 };
 
@@ -22,12 +23,12 @@ const ResourcesHero = () => {
           caption: t("resourceQuote1")
         },
         {
-          url: '../public/images/milad-fateme-8a.jpg',
+          url: '../public/images/painting.jpeg',
           caption: t("resourceQuote2")
         },
         {
           url: '../public/images/f.jpeg',
-          caption: 'Slide 3'
+          caption: t("resourceQuote3")
         },
     ];
 
@@ -36,7 +37,7 @@ const ResourcesHero = () => {
       backgroundColor: "rgba(248, 248, 239, 0.9)",
       direction: currentLang === 'fa' ? 'rtl' : 'ltr', // Set direction based on language
       textAlign: currentLang === 'fa' ? 'right' : 'left', // Align text based on language
-      fontSize:  "30px"
+      fontSize:  "25px"
     };
 
     return (
