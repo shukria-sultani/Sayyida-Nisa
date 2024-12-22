@@ -4,6 +4,7 @@ import Footer from "../Components/Footer"
 import ResourcesHero from '../Components/ResourcesHero'
 import Documentation from '../Components/Documentation'
 import MoreResources from '../Components/MoreResources'
+import Art from '../Components/Art'
 function Resources() {
   return (
     <>
@@ -11,6 +12,7 @@ function Resources() {
     <ResourcesHero />
     <Documentation />
     <MoreResources />
+    <Art />
     <Footer />
     
     </>

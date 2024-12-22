@@ -163,3 +163,13 @@
      font-size: 25px;
     
 }
+.art-link{
+    background-color: #007A33;
+    border: none;
+    font-size: 25px;
+    width: 100px;
+}
+.art-link a{
+    color: rgb(245, 173, 28);
+    text-decoration: none;
+}
