@@ -19,15 +19,15 @@ const ResourcesHero = () => {
 
     const slideImages = [
         {
-          url: '../public/images/fa.jpeg',
+          url: '/images/fa.jpeg',
           caption: t("resourceQuote1")
         },
         {
-          url: '../public/images/painting.jpeg',
+          url: '/images/painting.jpeg',
           caption: t("resourceQuote2")
         },
         {
-          url: '../public/images/f.jpeg',
+          url: '/images/f.jpeg',
           caption: t("resourceQuote3")
         },
     ];
