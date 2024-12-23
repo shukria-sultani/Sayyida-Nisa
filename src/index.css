@@ -41,7 +41,7 @@
     transform: scaleX(1); /* Expand underline on hover */
 }
  .starting-quote-con {
-      background-image: url(../public/images/5e5498836db0fa6b458dd3fefb310f41.gif);
+      background-image: url(/images/5e5498836db0fa6b458dd3fefb310f41.gif);
       background-repeat: repeat;
       background-size: contain;
       height:auto;
@@ -65,7 +65,7 @@
 .bio-section{
     box-shadow: 2px 2px 4px 4px rgba(245, 173, 28, 0.6);
     background: 
-    linear-gradient(to left, rgba(245, 173, 28, 0.9), rgba(227, 200, 118, 0.7)), url(../public/images/20.jpg) ;
+    linear-gradient(to left, rgba(245, 173, 28, 0.9), rgba(227, 200, 118, 0.7)), url(/images/20.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -86,7 +86,7 @@
      1px  1px 0 rgb(245, 173, 28);
 }
 .life-lessson-hero{
-    background-image: url(../public/images/36b5cac97e70863dda9a5dd8329cc8e4.jpg);
+    background-image: url(/images/36b5cac97e70863dda9a5dd8329cc8e4.jpg);
     height: 100vh;
     background-size: contain;
     background-position: center;
@@ -102,7 +102,7 @@
      1px  1px 0 rgb(6, 204, 56);
 }
 .life-lesson{
-     background-image: url(../public/images/ffef6a35-6cf5-47a1-995c-b06a35b62462.jpeg);
+     background-image: url(/images/ffef6a35-6cf5-47a1-995c-b06a35b62462.jpeg);
   background-size: contain;
 
 
@@ -134,14 +134,14 @@
 }
 
 .main-quote-con{
-    background-image: url(../public/images/Lindas\ margaridas\ em\ fundo\ amarelo\ com\ copyspace\ na\ parte\ inferior\ _\ Foto\ Grátis.jpeg);
+    background-image: url(/images/Lindas\ margaridas\ em\ fundo\ amarelo\ com\ copyspace\ na\ parte\ inferior\ _\ Foto\ Grátis.jpeg);
     background-size: cover;
     border-radius: 10px;
     
 }
 .butterflies{
     /* transform: translateY(-10%); */
-    background-image: url(../public/images/491e8249887be2a4550b47b2a6c7de10.gif);
+    background-image: url(/images/491e8249887be2a4550b47b2a6c7de10.gif);
     width: 100%;
     height: 300px;
     background-size: contain;
