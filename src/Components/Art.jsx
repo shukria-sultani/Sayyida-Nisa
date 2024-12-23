@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next';
 function Art() {
   const {t} = useTranslation()
   return (
-    <div className="container mt-5 p-5 d-flex col-lg-12 items-center flex-wrap flex-column">
+    <div className="container pt-5 mt-5 text-center">
        <h1 className='text-center'>{t("artTitle")}</h1>
-      <div className="d-flex flex-wrap text-center gap-4 p-5">
+      <div className="">
         <ArtSection 
           image={"/images/hazratfatemeh008.jpg"} 
           description={t("art1Description")}
