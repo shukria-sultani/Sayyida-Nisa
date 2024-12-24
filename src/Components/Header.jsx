@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 function Header() {
   const activeLink = ({ isActive }) =>
     isActive ? "nav-link active p-3  text-warning" : "nav-link p-3 text-warning";
@@ -8,7 +9,9 @@ function Header() {
   const { t, i18n } = useTranslation();
   const changeLang = (lang) => {
     i18n.changeLanguage(lang);
+    localStorage.setItem('selectedLang', lang);
   };
+
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: "#007A33" }}>

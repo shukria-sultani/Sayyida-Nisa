@@ -27,7 +27,16 @@ const router = createBrowserRouter([
 
 function App() {
   const { i18n } = useTranslation();
-  
+
+  // Effect to load language from localStorage
+  useEffect(() => {
+    const savedLang = localStorage.getItem('selectedLang');
+    if (savedLang) {
+      i18n.changeLanguage(savedLang);
+    } else {
+      i18n.changeLanguage('fa'); // Default to Persian
+    }
+  }, [i18n]);
   useEffect(() => {
     document.body.dir = i18n.language === "fa" ? "rtl" : "ltr";
   }, [i18n.language]);
