@@ -37,7 +37,7 @@ const ResourcesHero = () => {
       backgroundColor: "rgba(248, 248, 239, 0.9)",
       direction: currentLang === 'fa' ? 'rtl' : 'ltr', // Set direction based on language
       textAlign: currentLang === 'fa' ? 'right' : 'left', // Align text based on language
-      fontSize:  "25px"
+      fontSize:  "23px"
     };
 
     return (
