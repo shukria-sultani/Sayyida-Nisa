@@ -8,7 +8,7 @@ const {t} = useTranslation()
          <div className="container pt-3">
               <h1>{t("moreResourcesTitle")}</h1>
             <p style={{fontSize: "20px"}}>{t("moreResourcesContent")}</p>
-            <a href="https://montazer.ir/la24-2/" target="_blank" className="resource-link rounded-2">{t("moreResourcesLink")}</a>
+           <button type="button" className="art-link col-12 col-lg-6 p-2 rounded-2"><a href="https://montazer.ir/la24-2/" target="_blank" className=" ">{t("moreResourcesLink")}</a></button>
          </div>
      </div>
   );
