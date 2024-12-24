@@ -81,19 +81,21 @@
 }
 .life-lessson-hero{
     background-image: url(/images/36b5cac97e70863dda9a5dd8329cc8e4.jpg);
-    height: 100vh;
+    height: 80vh;
     background-size: contain;
     background-position: center;
    
     
   
 }
-.life-lessson-hero p{
+.life-lessson-hero h3{
     text-shadow: 
     -1px -1px 0 rgb(6, 204, 56),  
      1px -1px 0 rgb(6, 204, 56),
     -1px  1px 0 rgb(6, 204, 56),
      1px  1px 0 rgb(6, 204, 56);
+     text-align: center;
+
 }
 .life-lesson{
      background-image: url(/images/ffef6a35-6cf5-47a1-995c-b06a35b62462.jpeg);
@@ -166,4 +168,5 @@
 .art-link a{
     color: rgb(245, 173, 28);
     text-decoration: none;
+    
 }

@@ -5,11 +5,11 @@ function LessonsHeroSection() {
   const {t} = useTranslation()
   return (
     <div className='container-fluid life-lessson-hero '>
-        <div className="container p-5">
-          <p className='text-warning pt-5 ms-lg-5 mt-5 ps-lg-5 fw-bolder display-6 text-center'
+        <div className="container pt-5 pt-sm-2  ">
+          <h3 className='text-warning pt-md-5 mt-md-5   fw-bolder text-center'
              dangerouslySetInnerHTML={{ __html: t("lifeLessonsHero") }}
-          >
-          </p>
+           >
+          </h3>
         </div>
     </div>
   )
