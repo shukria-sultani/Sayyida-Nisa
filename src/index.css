@@ -34,11 +34,11 @@
 } 
 
 .nav-item  .nav-link:hover {
-    transform: translateY(-2px); /* Slight lift on hover */
+    transform: translateY(-2px); 
 }
 
 .nav-item  .nav-link:hover::after {
-    transform: scaleX(1); /* Expand underline on hover */
+    transform: scaleX(1);
 }
  .starting-quote-con {
       background-image: url(/images/5e5498836db0fa6b458dd3fefb310f41.gif);
@@ -51,15 +51,9 @@
 
 .starting-quote-con .container{
       background-color: rgba(252, 175, 20, 0.6);
-      /* color: rgb(242, 178, 49); */
       color: #299e0b;
       box-shadow: 0ox 10px 10px 0px #007A33;
-         /* text-shadow: 
-    -1px -1px 0 rgb(6, 204, 56),  
-     1px -1px 0 rgb(6, 204, 56),
-    -1px  1px 0 rgb(6, 204, 56),
-     1px  1px 0 rgb(6, 204, 56); */
-
+  
     
 }
 .bio-section{
@@ -140,7 +134,7 @@
     
 }
 .butterflies{
-    /* transform: translateY(-10%); */
+
     background-image: url(/images/491e8249887be2a4550b47b2a6c7de10.gif);
     width: 100%;
     height: 300px;
